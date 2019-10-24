@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="166c7eba1dd8465481134c115ab76ca8" Name="Diagram1">
+        <EntityTypeShape EntityType="projectModel.C__MigrationHistory" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="projectModel.Category" Width="1.5" PointX="0.75" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="projectModel.ClientBillDetail" Width="1.5" PointX="5.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="projectModel.ClientBill" Width="1.5" PointX="3" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="projectModel.Client" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="projectModel.MeasuringUnit" Width="1.5" PointX="5.25" PointY="11.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="projectModel.Product" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="projectModel.RepresentitiveBillDetail" Width="1.5" PointX="8.25" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="projectModel.RepresentitiveBill" Width="1.5" PointX="6" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="projectModel.Representitive" Width="1.5" PointX="0.75" PointY="4" IsExpanded="true" />
+        <EntityTypeShape EntityType="projectModel.SupplyerBillDetail" Width="1.5" PointX="9.75" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="projectModel.SupplyerBill" Width="1.5" PointX="7.5" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="projectModel.Supplyer" Width="1.5" PointX="5.25" PointY="22.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="projectModel.User" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="projectModel.FK_dbo_Products_dbo_Categories_CategoryObj_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="projectModel.FK_dbo_ClientBillDetails_dbo_ClientBills_ClientBillObj_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="projectModel.FK_dbo_ClientBillDetails_dbo_Products_ProductOpj_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="projectModel.FK_dbo_ClientBills_dbo_Clients_ClientObj_NationalID" ManuallyRouted="false" />
+        <AssociationConnector Association="projectModel.FK_dbo_ClientBills_dbo_Representitives_RepresentiveOBject_NationalID" ManuallyRouted="false" />
+        <AssociationConnector Association="projectModel.FK_dbo_MeasuringUnits_dbo_Products_PID" ManuallyRouted="false" />
+        <AssociationConnector Association="projectModel.FK_dbo_RepresentitiveBillDetails_dbo_Products_ProductObj_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="projectModel.FK_dbo_SupplyerBillDetails_dbo_Products_productOpj_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="projectModel.FK_dbo_RepresentitiveBillDetails_dbo_RepresentitiveBills_RepresentitiveBillObj_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="projectModel.FK_dbo_RepresentitiveBills_dbo_Representitives_Representitive_NationalID" ManuallyRouted="false" />
+        <AssociationConnector Association="projectModel.FK_dbo_SupplyerBillDetails_dbo_SupplyerBills_SupplyerBillobj_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="projectModel.FK_dbo_SupplyerBills_dbo_Supplyers_supplyer_ID" ManuallyRouted="false" />
+        <AssociationConnector Association="projectModel.SupplyerProducts" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
